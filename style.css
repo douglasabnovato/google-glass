@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(_fonts/bubblegum-sans-regular.otf);
+}
 
 body{
     background-color:#dddddd;
@@ -25,8 +29,27 @@ header#cabecalho img#icone{
     top: 40px;
 }
 
-header#cabelho{
-    
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;    
+}
+
+header#cabecalho h2{
+    font-family: arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 /* formatação de imagens com legendas */
