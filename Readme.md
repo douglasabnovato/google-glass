@@ -1,7 +1,7 @@
 ## Tudo sobre Google Glass
 
 ### Criação: 29 de fevereiro de 2020
-### Atualização: 02 de março de 2020
+### Atualização: 03 de março de 2020
 ### Terminado: Não
 ### Publicado: Não
 ### Prática : @douglasabnovato
