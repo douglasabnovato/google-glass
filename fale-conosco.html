@@ -43,7 +43,7 @@
                             <h3 class="direita">Atualizado em 03/Março/2020</h3> 
                         </hgroup>
                     </header>
-                    <form>
+                    <form method="post" id="fContato" action="mailto:douglasabnovato@gmail.com">
                         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
                             <p><label for="cNome" >Nome:</label>
                                 <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/>
@@ -62,18 +62,52 @@
                         <fieldset id="endereco"><legend>Endereço do Usuário</legend>
                             <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua" /></p>
                             <p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
-                            <p><label for="cEstado">Estado:</label><input type="text" name="tEstado" id="cEstado" size="13" maxlength="80" placeholder="Estado"/></p>
-                            <p><label for="cCidade">Cidade:</label><input type="text" name="tCidade" id="cCidade" size="13" maxlength="80" placeholder="Cidade"/></p>
+                            <p><label for="cEstado">Estado:</label>
+                                <select name="tEst" id="cEst">
+                                    <option selected>Escolha</option>
+                                    <optgroup label="Região Sudeste">
+                                        <option>Rio de Janeiro</option>
+                                        <option>São Paulo</option>
+                                        <option>Minas Gerais</option>
+                                    </optgroup>                                    
+                                    <optgroup label="Região Sul">
+                                        <option>Paraná</option>
+                                        <option>Santa Catarina</option>
+                                        <option>Rio Grande do Sul</option>
+                                    </optgroup>                                    
+                                </select>
+                            </p>
+                            <p><label for="cCidade">Cidade:</label>
+                                <input type="text" name="tCidade" id="cCidade" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades"/>
+                                <datalist id="cidades">
+                                    <option value="Rio de Janeiro"></option>
+                                    <option value="Nova Iguaçu"></option>
+                                    <option value="Niterói"></option>
+                                    <option value="Belford Roxo"></option>
+                                </datalist>
+                            </p>
                         </fieldset>
                         <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-                            <p><label for="cUrg">Grau de Urgência:</label></p>
-                            <p><label for="cMsg">Mensagem:</label></p>
+                            <p><label for="cUrg">Grau de Urgência:</label>
+                                Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1"/>Máx
+                            </p>
+                            <p><label for="cMsg">Mensagem:</label>
+                                <textarea name="tMsg" id="cMsg" cols="75" rows="5" placeholder="Deixe sua mensagem"></textarea>
+                            </p>
                         </fieldset>
                         <fieldset id="pedido"><legend>Quero um Google Glass</legend>
-                            <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-                            <p><label for="cCor">Cor:</label></p>
-                            <p><label for="cQtd">Quantidade:</label></p>
-                            <p><label for="cTot">Preço Total: R$</label></p>
+                            <p><input type="checkbox" name="tPed" id="cPed" checked/>
+                               <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>                    
+                            </p>
+                            <p><label for="cCor">Cor:</label>
+                               <input type="color" name="tCor" id="cCor" value="#0000FF"/>
+                            </p>
+                            <p><label for="cQtd">Quantidade:</label>
+                                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0" />
+                            </p>
+                            <p><label for="cTot">Preço Total: R$</label>
+                                <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly/>
+                            </p>
                         </fieldset>
                         [BOTÃO ENVIAR]
                     </form>
