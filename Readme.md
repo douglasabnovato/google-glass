@@ -2,8 +2,8 @@
 
 ### Criação: 29 de fevereiro de 2020
 ### Atualização: 04 de março de 2020
-### Terminado: Sim
-### Publicado: Não
+### Terminado: Sim 
+### Publicado: Sim em https://google-glass.now.sh/
 ### Prática : @douglasabnovato
 
 ## Desafio do projeto `Google Glass`
