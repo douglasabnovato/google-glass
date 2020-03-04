@@ -238,3 +238,14 @@ footer#rodape{
 footer#rodape p {
     text-align: center;
 }
+
+video#filme-recente{
+    display: block;
+    position: relative;
+    width: 345px;
+}
+video#filme-amostra{
+    display: block;
+    position: relative;
+    width: 450px;
+}
