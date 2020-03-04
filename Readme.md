@@ -22,7 +22,7 @@
 ![VSCode](/images/logo-VSCode.png)
 
 ## Terminado o projeto `Google Glass`
-- Site publicado em [link para essa aplicação](https://google-glass.now.sh/)
+- Site publicado [link para essa aplicação](https://google-glass.now.sh/)
 - Servidor ZEIT.Now (Gratuito)
 
 >@douglasabnovato
